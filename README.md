@@ -3,8 +3,7 @@ Der Begriff setzt sich aus „Dev“ (Development) und „Ops“ (Operations) zu
 DevOps lässt sich von zuvor getrennten Rollen wie Entwicklung, IT-Betrieb, Qualitätstechnik und Sicherheit koordinieren, um gemeinsam bessere und zuverlässigere Produkte zu realisieren<p></p>
 
 
-![image](https://github.com/DavidImmanuelSchwieder/DevOps/assets/145438444/839f0b1d-95b6-4579-8ac1-ef848e7bf229)
-
+z65ü6
 ### Was ist Continuous Integration (CI) ? 
 <p></p>
 CI ist ein aotmatisierungsprozess für Entwicklungsteams , dadruch können so viele leute wie beliebig an einem projekt arbeiten und die änderungen werden automatisch für alle beteilige in einem gemeinsamen Repository integriert. Dadurch werden Fehler in der Entwicklung schneller erkannt und können früher behoben werden.

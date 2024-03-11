@@ -1,0 +1,1 @@
+{"EnqueuedTimeUtc":"2024-03-08T13:15:58.2000000Z","SystemProperties":{"connectionDeviceId":"NAME_OF_YOUR_DEVICE","connectionAuthMethod":"{\"scope\":\"device\",\"type\":\"sas\",\"issuer\":\"iothub\",\"acceptingIpFilterRule\":null}","connectionDeviceGenerationId":"ID","enqueuedTime":"2024-03-08T13:15:58.2000000Z"},"Body":"YOUR_MESSAGE"}
