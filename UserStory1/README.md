@@ -4,14 +4,14 @@
           ### Anmelden bei Azure
           Connect-AzAccount
 
-          ### Variablen definieren
+          Variablen definieren
           $resourceGroupName = "myResourceGroup"
           $templateFile = "path/to/compiled/template.json"
 
-          ### Ressourcengruppe erstellen
+          Ressourcengruppe erstellen
           New-AzResourceGroup -Name $resourceGroupName -Location "West Europe"
 
-          ### Bereitstellung ausführen
+          Bereitstellung ausführen
           New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateFile $templateFile
 
 
