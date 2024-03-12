@@ -11,12 +11,12 @@ function DeployToDev {
  
 function DeployToTest {
     Write-Host "Deploying to Test environment..."
-    az deployment group create --resource rg-david-schwieder --template-file deploy-app.bicep --parameters .\Userstory1\test.json --confirm-with-what-if
+    az deployment group create --resource rg-david-schwieder --template-file C:\Users\David.Schwieder\DevOps\Userstory1\deploy-app.bicep --parameters .\Userstory1\test.json --confirm-with-what-if
 }
  
 function DeployToMain {
     Write-Host "Deploying to Main environment..."
-    az deployment group create --resource rg-david-schwieder --template-file deploy-app.bicep --parameters .\Userstory1\main.json --confirm-with-what-if
+    az deployment group create --resource rg-david-schwieder --template-file C:\Users\David.Schwieder\DevOps\Userstory1\deploy-app.bicep --parameters .\Userstory1\main.json --confirm-with-what-if
 }
  
 if ($environment -eq 'dev') {
