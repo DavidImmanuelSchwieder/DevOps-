@@ -1,12 +1,12 @@
 param (
     [string]$environment
 )
-
+$environment = 'dev'
 az login
  
 function DeployToDev {
     Write-Host "Deploying to Dev environment..."
-    az deployment group create --resource rg-david-schwieder --template-file deploy-app.bicep --parameters .\Userstory1\dev.json --confirm-with-what-if
+    az deployment group create --resource rg-david-schwieder --template-file C:\Users\David.Schwieder\DevOps\Userstory1\deploy-app.bicep --parameters .\Userstory1\dev.json --confirm-with-what-if
 }
  
 function DeployToTest {
