@@ -1,5 +1,5 @@
 # PowerShell
-&rarr;PowerShell-Skripts(.ps1) benutzen wir um unsere Bicep-Dateien bereitzustellen. Sie können uns auch alles einfacher machen, zum Beispiel könnte man durch ein Skript sich anmelden lassen und eine Ressourcengruppe zu erstellen, ein Beispiel dafür ist hier:
+PowerShell-Skripts(.ps1) benutzen wir um unsere Bicep-Dateien bereitzustellen. Sie können uns auch alles einfacher machen, zum Beispiel könnte man durch ein Skript sich anmelden lassen und eine Ressourcengruppe zu erstellen, ein Beispiel dafür ist hier:
                                     &dArr;
          
           Anmelden bei Azure
