@@ -1,18 +1,18 @@
 # PowerShell
 &rarr;PowerShell-Skripts(.ps1) benutzen wir um unsere Bicep-Dateien bereitzustellen. Sie können uns auch alles einfacher machen, zum Beispiel könnte man durch ein Skript sich anmelden lassen und eine Ressourcengruppe zu erstellen, ein Beispiel dafür ist hier:
                                     &dArr;
-  ## Anmelden bei Azure
-  Connect-AzAccount
+          ### Anmelden bei Azure
+          Connect-AzAccount
 
-  ## Variablen definieren
-  $resourceGroupName = "myResourceGroup"
-  $templateFile = "path/to/compiled/template.json"
+          ### Variablen definieren
+          $resourceGroupName = "myResourceGroup"
+          $templateFile = "path/to/compiled/template.json"
 
-  ## Ressourcengruppe erstellen
-  New-AzResourceGroup -Name $resourceGroupName -Location "West Europe"
+          ### Ressourcengruppe erstellen
+          New-AzResourceGroup -Name $resourceGroupName -Location "West Europe"
 
-  ## Bereitstellung ausführen
-  New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateFile $templateFile
+          ### Bereitstellung ausführen
+          New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateFile $templateFile
 
 
 # Virtual Machines
