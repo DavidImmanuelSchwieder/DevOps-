@@ -1,10 +1,11 @@
 param (
     [string]$environment
 )
+$environment = 'dev'
  
 function DeployTestToDev {
     Write-Host "Deploying to Dev environment..."
-    az deployment group create --resource NAME_OF_YOUR_RESSOURCE_GROUP --template-file .\UserStory2und3\iotsetup.bicep --parameters .\UserStory2und3\dev.json --confirm-with-what-if
+    az deployment group create --resource rg-david-schwieder --template-file .\UserStory2und3\iotsetup.bicep --parameters .\UserStory2und3\dev.json --confirm-with-what-if
 }
  
 function DeployTestToTest {

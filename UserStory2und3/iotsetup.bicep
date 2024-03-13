@@ -1,13 +1,13 @@
-param demoName string = 'NAME_OF_YOUR_IOT_HUB'
+param demoName string = 'iothubname001'
 param location string = resourceGroup().location
 param skuName string = 'S1'
 param skuUnits int = 1
 param d2cPartitions int = 4
 
 // Konfiguration des IoT-Hubs und des Speicherkontos
-var iotHubName = '${demoName}Hub${uniqueString(resourceGroup().id)}'
-var storageAccountName = '${toLower(demoName)}${uniqueString(resourceGroup().id)}'
-var storageEndpoint = '${demoName}StorageEndpont'
+var iotHubName = '${demoName}hub${uniqueString(resourceGroup().id)}'
+var storageAccountName = 'try022'
+var storageEndpoint = '${demoName}storageendpont'
 var storageContainerName = '${toLower(demoName)}results'
 param repositoryBranch string = 'main'
 
@@ -189,7 +189,7 @@ resource srcControls 'Microsoft.Web/sites/sourcecontrols@2023-01-01' = {
   parent: functionApp
   name: 'web'
   properties: {
-    repoUrl: 'https://github.com/NAME_OF_YOUR_GITHUB_ACCOUNT'
+    repoUrl: 'https://github.com/DavidImmanuelSchwieder/DevOps-'
     branch: repositoryBranch
     isManualIntegration: true
   }
