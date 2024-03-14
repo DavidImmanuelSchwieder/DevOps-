@@ -6,8 +6,8 @@ param d2cPartitions int = 4
 
 // Konfiguration des IoT-Hubs und des Speicherkontos
 var iotHubName = '${demoName}hub${uniqueString(resourceGroup().id)}'
-var storageAccountName = 'try022'
-var storageEndpoint = '${demoName}storageendpont'
+var storageAccountName = '${demoName}${uniqueString(resourceGroup().id)}'
+var storageEndpoint = '${demoName}StoragEendpont'
 var storageContainerName = '${toLower(demoName)}results'
 param repositoryBranch string = 'main'
 
