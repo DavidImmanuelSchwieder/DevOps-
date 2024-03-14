@@ -1,13 +1,13 @@
-param demoName string = 'iothubname001'
+param demoName string = 'kyshub001'
 param location string = resourceGroup().location
 param skuName string = 'S1'
 param skuUnits int = 1
 param d2cPartitions int = 4
 
 // Konfiguration des IoT-Hubs und des Speicherkontos
-var iotHubName = '${demoName}hub${uniqueString(resourceGroup().id)}'
+var iotHubName = '${toLower(demoName)}hub${uniqueString(resourceGroup().id)}'
 var storageAccountName = '${demoName}${uniqueString(resourceGroup().id)}'
-var storageEndpoint = '${demoName}StoragEendpont'
+var storageEndpoint = '${demoName}StoragEndpont'
 var storageContainerName = '${toLower(demoName)}results'
 param repositoryBranch string = 'main'
 
