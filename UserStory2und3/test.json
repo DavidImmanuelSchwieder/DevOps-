@@ -1,12 +1,27 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-      "textToReplaceSubtitleWith": {
-        "value": "This site is being tested and was released to Azure using a Bicep file. Let's see if Biceps are better than ARM templates."
-      },
-      "repositoryBranch": {
-        "value": "test"
-      }
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "demoName": {
+      "value": "kyshub001"
+    },
+    "skuName": {
+      "value": "F1"
+    },
+    "skuUnits": {
+      "value": 1
+    },
+    "d2cPartitions": {
+      "value": 4
+    },
+    "runtime": {
+      "value": "python"
+    },
+    "textToReplaceSubtitleWith": {
+      "value": "This site is being tested and was released to Azure using a Bicep file."
+    },
+    "repositoryBranch": {
+      "value": "test"
     }
   }
+}
