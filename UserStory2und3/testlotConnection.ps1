@@ -1,8 +1,8 @@
-$iotHubName = "YOUR_IOT_HUB_NAME"
+$iotHubName = "kyshub001"
 $storage = "YOUR_STORAGE_NAME"
 $deviceId = "YOUR_DEVICE_NAME"
-$message = "YOUR_MESSAGE"
-$containerName = "YOUR_CONTAINER_NAME"
+$message = "DieNachrichtDieIchMitSendenMöchte"
+$containerName = "kyshub001results"
 
 $destinationPath = "DevOps\Userstory2und3\response.json"
 
