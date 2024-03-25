@@ -1,0 +1,24 @@
+name: Deploy Bicep file
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@main
+
+      - name: Log into Azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Deploy Bicep file 1
+        run: |
+            az deployment group create --resource-group ${{ secrets.AZURE_RG }} --name Userstory1Deployment --template-file ./UserStory1/deploy-app.bicep --parameters ./Userstory1/dev.json --mode complete
+
+      - name: Deploy Bicep file 2 und 3
+        run: |
+             az deployment group create --resource-group ${{ secrets.AZURE_RG }} --name Userstory2Deployment --template-file ./UserStory2und3/iotsetup.bicep --parameters ./Userstory2und3/test.json --mode complete
+          
+     
